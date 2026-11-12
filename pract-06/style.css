@@ -1,0 +1,169 @@
+.forefathers-hero-section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: url("./pract_6/FFTablet_1100x.progressive.webp") center bottom / cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px 50px 50px 50px;
+    box-sizing: border-box;
+    font-family: 'Georgia', serif;
+    color: #ffffff;
+}
+
+.forefathers-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 10;
+}
+
+.nav-links-left,
+.nav-links-right {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.forefathers-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    transition: opacity 0.3s ease;
+}
+
+.forefathers-nav a:hover {
+    opacity: 0.7;
+}
+
+.nav-logo img {
+    width: 75px;
+    height: 75px;
+    padding-right: 1400px;
+    display: block;
+}
+
+.btn-start-project {
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    padding: 10px 22px;
+    letter-spacing: 2px;
+    display: inline-block;
+}
+
+.mobile-only-link {
+    display: none;
+}
+
+.forefathers-header {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.hero-title {
+    font-family: sans-serif;
+    font-size: 130px;
+    font-weight: 900;
+    letter-spacing: 12px;
+    line-height: 1;
+    color: #f5f5f3;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.hero-subtitle {
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    margin-top: 20px;
+    color: #e0e0e0;
+    text-transform: uppercase;
+}
+
+.forefathers-bottom-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    margin-top: auto;
+}
+
+.description-box {
+    max-width: 380px;
+}
+
+.description-box p {
+    font-size: 22px;
+    line-height: 1.4;
+    color: #eaeaea;
+    margin: 0;
+}
+
+.badges-box {
+    text-align: center;
+}
+
+.badges-box img {
+    max-width: 180px;
+    height: auto;
+}
+
+.estd-text {
+    display: block;
+    font-family: sans-serif;
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: #aaaaaa;
+    margin-top: 8px;
+}
+
+
+@media (max-width: 1200px) {
+    .forefathers-hero-section {
+        padding: 20px 30px 40px;
+    }
+
+    .forefathers-nav {
+        justify-content: center;
+        gap: 25px;
+    }
+
+    .nav-logo,
+    .desktop-only {
+        display: none !important;
+    }
+
+    .mobile-only-link {
+        display: inline-block;
+    }
+
+    .hero-title {
+        display: none;
+    }
+
+    .forefathers-header {
+        margin-top: 30px;
+    }
+
+    .forefathers-bottom-content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 20px;
+    }
+
+    .description-box {
+        max-width: 650px;
+        text-align: center;
+    }
+
+    .description-box p {
+        font-size: 24px;
+        line-height: 1.5;
+    }
+}
